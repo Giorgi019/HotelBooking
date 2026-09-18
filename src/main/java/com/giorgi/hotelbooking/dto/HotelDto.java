@@ -5,14 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookingRequest {
-    private Long roomId;
-    private LocalDate checkInDate;
-    private LocalDate checkOutDate;
+@Builder
+public class HotelDto {
+    private String name;
+    private String location;
+    private String description;
 }
